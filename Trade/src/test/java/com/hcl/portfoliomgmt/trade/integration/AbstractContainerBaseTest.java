@@ -21,8 +21,8 @@ class AbstractContainerBaseTest {
                 .withUsername("user")
                 .withPassword("password");
         MY_SQL_CONTAINER.start();
-        var containerDelegate = new JdbcDatabaseDelegate(MY_SQL_CONTAINER, "");
-        ScriptUtils.runInitScript(containerDelegate, "sql/scripts_test.sql");
+       /* var containerDelegate = new JdbcDatabaseDelegate(MY_SQL_CONTAINER, "");
+        ScriptUtils.runInitScript(containerDelegate, "sql/scripts_test.sql");*/
     }
 
     @DynamicPropertySource
