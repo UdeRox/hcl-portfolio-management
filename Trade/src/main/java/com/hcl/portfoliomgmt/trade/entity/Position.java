@@ -1,9 +1,6 @@
-package com.hcl.portfoliomgmt.trade.web.model;
+package com.hcl.portfoliomgmt.trade.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
@@ -24,14 +21,19 @@ public class Position {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name="position_id")
     private String positionId;
 
+    @Column(name="transaction_ref")
     private String transactionRef;
 
+    @Column(name="portfolio_id")
     private Long portfolioId;
 
+    @Column(name="instrument_id")
     private Long instrumentId;
 
+    @Column(name="customer_id")
     private String customerId;
 
 }

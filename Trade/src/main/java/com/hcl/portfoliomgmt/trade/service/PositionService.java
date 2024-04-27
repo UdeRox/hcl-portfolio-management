@@ -1,11 +1,11 @@
 package com.hcl.portfoliomgmt.trade.service;
 
-import com.hcl.portfoliomgmt.trade.web.model.Position;
+import com.hcl.portfoliomgmt.trade.entity.Position;
 
 import java.util.List;
 
 public interface PositionService {
 
-    List<Position> getCurrentPostions(String email);
+    List<Position> getCurrentPositions(String customerId);
 
 }

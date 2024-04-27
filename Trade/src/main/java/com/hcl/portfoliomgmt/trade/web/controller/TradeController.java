@@ -18,7 +18,7 @@ public class TradeController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public void addCustomer(@RequestBody Trade trade){
+    public void addCustomer(@RequestBody Trade trade, @RequestHeader(value="customer-id") String customerId){
         this.tradeService.addTrade(trade);
     }
 }

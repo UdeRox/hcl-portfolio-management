@@ -1,10 +1,7 @@
-package com.hcl.portfoliomgmt.trade.data.entity;
+package com.hcl.portfoliomgmt.trade.entity;
 
 import com.hcl.portfoliomgmt.trade.constants.InstrumentType;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
 
 import java.util.Date;
@@ -14,6 +11,7 @@ import java.util.Date;
 @Data
 public class InstrumentEntity {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long instrumentId;
 
     @Column(name="instrument_name")
