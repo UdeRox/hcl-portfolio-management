@@ -9,7 +9,7 @@ import org.testcontainers.ext.ScriptUtils;
 import org.testcontainers.jdbc.JdbcDatabaseDelegate;
 
 @Slf4j
-class AbstractContainerBaseTest {
+public class AbstractContainerBaseTest {
 
     static final KafkaContainer kafka;
     static final MySQLContainer MY_SQL_CONTAINER;

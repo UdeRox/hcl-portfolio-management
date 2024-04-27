@@ -10,13 +10,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Position {
-/*[{
-        "TransactionRef": 0,
-                "InstrumentId": 0,
-                "InstrumentName": "",
-                "InstrumentValue": 0,
-                "InstrumentType": ""
-    }]*/
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -35,5 +29,8 @@ public class Position {
 
     @Column(name="customer_id")
     private String customerId;
+
+    @Column(name="position_value")
+    private Long positionValue;
 
 }
