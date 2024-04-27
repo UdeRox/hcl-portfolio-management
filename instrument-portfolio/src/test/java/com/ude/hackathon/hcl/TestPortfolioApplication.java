@@ -17,7 +17,7 @@ public class TestPortfolioApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.from(com.ude.bookstore.catalog.PortfolioApplication::main)
+        SpringApplication.from(PortfolioApplication::main)
                 .with(ContainerConfig.class)
                 .run(args);
     }
