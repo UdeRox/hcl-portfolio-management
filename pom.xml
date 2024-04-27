@@ -20,6 +20,7 @@
 
     <modules>
         <module>instrument-portfolio</module>
+        <module>api-gateway</module>
         <module>Trade</module>
     </modules>
     <build>

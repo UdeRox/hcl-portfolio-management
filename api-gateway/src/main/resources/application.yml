@@ -1,0 +1,17 @@
+logging:
+  level:
+    ROOT: DEBUG
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: instrument-portfolio
+          uri: http://localhost:8081/
+          predicates:
+            - Path=/instrument/**
+        - id: second-microservice
+          uri: http://localhost:8082/
+          predicates:
+            - Path=/instrument/**
