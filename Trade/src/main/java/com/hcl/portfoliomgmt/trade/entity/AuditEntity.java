@@ -1,19 +1,17 @@
-package com.hcl.portfoliomgmt.trade.data.entity;
+package com.hcl.portfoliomgmt.trade.entity;
 
 
 import com.hcl.portfoliomgmt.trade.constants.TradeType;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
 @Table(name = "Audit")
 @Data
-public class Audit {
+public class AuditEntity {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long auditId;
 
     @Column(name="transaction_ref")

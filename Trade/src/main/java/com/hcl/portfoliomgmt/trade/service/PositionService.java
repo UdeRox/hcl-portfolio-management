@@ -1,6 +1,6 @@
 package com.hcl.portfoliomgmt.trade.service;
 
-import com.hcl.portfoliomgmt.trade.data.entity.Position;
+import com.hcl.portfoliomgmt.trade.entity.Position;
 
 import java.util.List;
 

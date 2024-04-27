@@ -1,6 +1,6 @@
 package com.hcl.portfoliomgmt.trade.web.controller;
 
-import com.hcl.portfoliomgmt.trade.data.entity.Position;
+import com.hcl.portfoliomgmt.trade.entity.Position;
 import com.hcl.portfoliomgmt.trade.service.PositionService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

@@ -2,7 +2,7 @@ package com.hcl.portfoliomgmt.trade.service.impl;
 
 import com.hcl.portfoliomgmt.trade.repository.PositionRepository;
 import com.hcl.portfoliomgmt.trade.service.PositionService;
-import com.hcl.portfoliomgmt.trade.data.entity.Position;
+import com.hcl.portfoliomgmt.trade.entity.Position;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
