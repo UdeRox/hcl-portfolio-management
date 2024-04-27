@@ -1,4 +1,4 @@
-package com.hcl.portfoliomgmt.trade.web.model;
+package com.hcl.portfoliomgmt.trade.data.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
